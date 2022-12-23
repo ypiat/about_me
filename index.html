@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <title>My Webpage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <!--Navbar START-->
+        <header>
+            <nav class=" navbar-light">
+                <div>
+                    <ul class="navbar-nav nav-new">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">About me</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="nomad.html">Nomad</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="favorites.html">Favorites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Something</a>
+                          </li>
+                      </ul>
+                </div>
+              </nav>
+        </header>
+        <div id="sticky-space" style="height: 0px;" class=""></div>
+        <!--Navbar END-->
+        <!--First container for info and image-->
+        <!--First container START-->
+        <main>
+            <section class="position-relative overflow-hidden pt-5 pt-lg-3">
+                <div class="container">
+                    <!--Content starts-->
+                    <div class="row align-items-center g-5">
+                        <!--Left part starts-->
+                        <div class="col-lg-5 col-xl-6 position-relative z-index-1 text-center text-lg-start mb-5 mb-sm-0">
+                            <h2 class="mb-0 display-6">Hi, my name is <b>Yevheniia</b> (Evgenia, Jevgenija, Jewgenia depending on the sounds and letters of your language).</h2>
+                            <p class="my-4 lead">Who am I? Depending to whom. Daughter, wife, mother, sister, currently not a colleague or classmate. Who am I to myself? Difficult question... perhaps a person who is looking for her own way, who in the process tries to know herself, to know people close to her and the world around. A person who makes mistakes, who tries to find meaning and longs for happiness.</p>
+                        </div>
+                        <!--Left part ends-->
+                        <!--Right part starts-->
+                        <div class="col-lg-7 col-xl-6 text-center position-relative">
+                            <div class="position-relative">
+                                <img id="me" src="img/img.PNG" alt="picture of me">
+                            </div>
+                        </div>
+                        <!--Right part ends-->
+                    </div>
+                    <!--Content ends-->
+                </div>
+                <!--First container END-->
+
+                <!--Second container for interaction with user-->
+                <!--Second container START-->
+                <div class="container">
+                    <!--Content starts-->
+                    <div class="row g-5">
+                        <!--Left part starts-->
+                        <div class="border col-lg-5 col-xl-6 position-relative z-index-1 text-lg-start mb-5 mb-sm-0">
+                            <h2 class="margin">How much do we have in common?</h2>
+                            <div class="input">
+                                <label for="name">What is your name?</label><br>
+                                <input type="text" id="name" name="name" placeholder="Name"><br>
+                            </div>
+                            <div>
+                                <p>Choose what do you like to do:</p>
+                                <div>
+                                    <input class="checkbox" type="checkbox" id="1" name="dance" value="dance">
+                                    <label for="1">dance</label><br>
+                                    <input class="checkbox" type="checkbox" id="2" name="walking" value="walking">
+                                    <label for="2"> walking</label><br>
+                                    <input class="checkbox" type="checkbox" id="4" name="needlework" value="needlework">
+                                    <label for="4"> do needlework</label><br>
+                                    <input class="checkbox" type="checkbox" id="5" name="spirituality" value="spirituality">
+                                    <label for="5"> talk about spirituality</label><br>
+                                    <input class="checkbox" type="checkbox" id="6" name="partner" value="partner">
+                                    <label for="6"> spend time with your partner</label><br>
+                                    <input class="checkbox" type="checkbox" id="7" name="play" value="play">
+                                    <label for="7"> play in performances</label><br>
+                                </div>
+                                <button id="check">Check</button>
+                            </div>
+                        </div>
+                        <!--Left part ends-->
+                        <!--Right part starts-->
+                        <div class="border col-lg-7 col-xl-6 text-center position-relative">
+                            <div>
+                                <h4 id="greeting">Click Check to see results.</h4>
+                                <p id="result"></p>
+                            </div>
+                        </div>
+                        <!--Right part ends-->
+                    </div>
+                    <!--Content ends-->
+                </div>
+                <!--Second container END-->
+
+            </section>
+        </main>
+
+    </body>
+</html>
